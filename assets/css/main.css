@@ -6870,18 +6870,26 @@ input, select, textarea {
 			overflow: hidden;
 			width: 22.5rem;
 			max-width: 75vw;
+			object-fit: cover;
 		}
 
 			.gallery.style2 article .image {
 				display: block;
 				width: 100%;
 				border-radius: 0;
+				object-fit: contain; /* 縮放圖片以保持完整，並在容器內居中 */
+    object-position: center center; /* 將圖片置中 */
+				height: 100%;
 			}
 
 				.gallery.style2 article .image img {
 					display: block;
 					width: 100%;
 					border-radius: 0;
+					object-fit: contain; /* 縮放圖片以保持完整，並在容器內居中 */
+    object-position: center center; /* 將圖片置中 */
+					height: 100%;
+					background-color: rgb(238, 238, 238);
 				}
 
 			.gallery.style2 article .caption {
